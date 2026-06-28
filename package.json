@@ -1,0 +1,16 @@
+{
+  "name": "express-js",
+  "version": "1.0.0",
+  "description": "node js and express js",
+  "license": "ISC",
+  "author": "krishna chuahan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}

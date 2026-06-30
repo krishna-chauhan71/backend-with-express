@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - Page Not Found</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      background:linear-gradient(135deg,#0f172a,#1e293b);
+      color:#fff;
+      overflow:hidden;
+    }
+
+    .container{
+      text-align:center;
+      padding:30px;
+      animation:fadeIn 1s ease;
+    }
+
+    h1{
+      font-size:9rem;
+      color:#38bdf8;
+      text-shadow:0 0 20px rgba(56,189,248,.6);
+      animation:float 2s ease-in-out infinite;
+    }
+
+    h2{
+      font-size:2rem;
+      margin:15px 0;
+    }
+
+    p{
+      font-size:1.1rem;
+      color:#cbd5e1;
+      margin-bottom:30px;
+    }
+
+    a{
+      display:inline-block;
+      padding:14px 30px;
+      text-decoration:none;
+      background:#38bdf8;
+      color:#fff;
+      border-radius:8px;
+      font-size:18px;
+      transition:.3s;
+    }
+
+    a:hover{
+      background:#0ea5e9;
+      transform:translateY(-3px);
+      box-shadow:0 10px 20px rgba(56,189,248,.4);
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+      h1{
+        font-size:6rem;
+      }
+
+      h2{
+        font-size:1.6rem;
+      }
+
+      p{
+        font-size:1rem;
+      }
+
+      a{
+        padding:12px 24px;
+        font-size:16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>404</h1>
+    <h2>Oops! Page Not Found</h2>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+
+    <a href="index.html">🏠 Back to Home</a>
+  </div>
+
+</body>
+</html>
